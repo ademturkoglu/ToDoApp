@@ -1,6 +1,6 @@
 # ToDo App [![Swift](https://img.shields.io/badge/Swift-5.1-orange.svg)]() [![Platform](https://img.shields.io/badge/platform-iOS14.4-lightgrey.svg)]()# ToDoApp
 
-* I used 'TagListView' 'FittedSheets' pods.
+
 * You can search  based on title, description, tags
 * You can create lots of to-do items for test on the right bar button and delete all with left bar button
 * Items that have due dates listed on top, sorted by their date.
