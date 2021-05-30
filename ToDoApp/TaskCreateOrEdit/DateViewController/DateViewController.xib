@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-SemiBold.ttf">
+            <string>Inter-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DateViewController" customModule="ToDoApp" customModuleProvider="target">
+            <connections>
+                <outlet property="cancel" destination="w0y-GJ-6fl" id="giO-mA-i8C"/>
+                <outlet property="datePicker" destination="z38-Ek-GRe" id="U46-Yl-evI"/>
+                <outlet property="done" destination="ize-dM-E06" id="k4o-oA-HzU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="425" height="267"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="enN-2E-YFP">
+                    <rect key="frame" x="17" y="0.0" width="391" height="267"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oK1-3h-gTZ">
+                            <rect key="frame" x="0.0" y="0.0" width="391" height="40"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w0y-GJ-6fl">
+                                    <rect key="frame" x="0.0" y="0.0" width="55" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="55" id="8W3-sr-cyx"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="16"/>
+                                    <state key="normal" title="Cancel"/>
+                                    <connections>
+                                        <action selector="onCancel:" destination="-1" eventType="touchUpInside" id="Sc1-bn-Ipq"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EkI-vx-wk5">
+                                    <rect key="frame" x="55" y="0.0" width="281" height="40"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ize-dM-E06">
+                                    <rect key="frame" x="336" y="0.0" width="55" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="55" id="puI-7C-Opw"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="16"/>
+                                    <state key="normal" title="Done"/>
+                                    <connections>
+                                        <action selector="onDone:" destination="-1" eventType="touchUpInside" id="tJR-Os-hLo"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Add-b6-aHx"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="PAZ-Ua-p2f">
+                            <rect key="frame" x="0.0" y="40" width="391" height="227"/>
+                            <subviews>
+                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" translatesAutoresizingMaskIntoConstraints="NO" id="z38-Ek-GRe">
+                                    <rect key="frame" x="0.0" y="0.0" width="391" height="227"/>
+                                </datePicker>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="enN-2E-YFP" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="4yo-4M-DVA"/>
+                <constraint firstItem="enN-2E-YFP" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="bsw-GH-ebo"/>
+                <constraint firstItem="enN-2E-YFP" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.92" id="id8-ka-YcW"/>
+                <constraint firstItem="enN-2E-YFP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="sZQ-mP-hTW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="145.6521739130435" y="-59.263392857142854"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

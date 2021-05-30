@@ -1,0 +1,20 @@
+PODS:
+  - FittedSheets (2.4.0)
+  - TagListView (1.4.1)
+
+DEPENDENCIES:
+  - FittedSheets
+  - TagListView (~> 1.0)
+
+SPEC REPOS:
+  trunk:
+    - FittedSheets
+    - TagListView
+
+SPEC CHECKSUMS:
+  FittedSheets: 470a7740a083156d711ab6ccd37d1d539005e6aa
+  TagListView: a1c236d17960a0cf64156725a76ce6d73ebce2be
+
+PODFILE CHECKSUM: ce8ed45fc720ae4222f3dcaa14c5cf8e2a13b117
+
+COCOAPODS: 1.10.0
