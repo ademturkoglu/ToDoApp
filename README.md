@@ -20,3 +20,5 @@
 
 * [TagListView](https://github.com/ElaWorkshop/TagListView)
 
+![](https://github.com/ademturkoglu/ToDoApp/blob/main/record.gif)
+
