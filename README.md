@@ -1,4 +1,4 @@
-# ToDo App [![Swift](https://img.shields.io/badge/Swift-5.1-orange.svg)]() [![Platform](https://img.shields.io/badge/platform-iOS14.4-lightgrey.svg)]()# ToDoApp
+# ToDo App [![Swift](https://img.shields.io/badge/Swift-5.1-orange.svg)]() [![Platform](https://img.shields.io/badge/platform-iOS14.4-lightgrey.svg)]()
 
 
 * You can search  based on title, description, tags
