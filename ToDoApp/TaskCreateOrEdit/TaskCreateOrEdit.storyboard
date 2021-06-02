@@ -16,10 +16,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="olt-Cx-vn5">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="olt-Cx-vn5">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Sg6-QU-9EK">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Sg6-QU-9EK">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="512"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7zY-xm-Dus">
@@ -97,7 +97,7 @@
                                                     <constraint firstAttribute="bottom" secondItem="poN-PJ-Tq7" secondAttribute="bottom" constant="4" id="tRa-x6-lqe"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3TX-VZ-k9r">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3TX-VZ-k9r">
                                                 <rect key="frame" x="0.0" y="384" width="414" height="128"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tags" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PpE-te-SRM">
@@ -127,8 +127,8 @@
                                                             </button>
                                                         </subviews>
                                                     </stackView>
-                                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6L6-bK-dI0" customClass="TagListView" customModule="TagListView">
-                                                        <rect key="frame" x="12" y="84.5" width="414" height="39.5"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6L6-bK-dI0" customClass="TagListView" customModule="TagListView">
+                                                        <rect key="frame" x="12" y="84.5" width="390" height="39.5"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="tagBackgroundColor">
@@ -176,6 +176,7 @@
                                                     <constraint firstItem="PpE-te-SRM" firstAttribute="top" secondItem="3TX-VZ-k9r" secondAttribute="top" constant="16" id="MOk-7p-xQx"/>
                                                     <constraint firstItem="yMj-O2-t1D" firstAttribute="top" secondItem="PpE-te-SRM" secondAttribute="bottom" constant="4" id="VGY-n2-TJ2"/>
                                                     <constraint firstItem="yMj-O2-t1D" firstAttribute="leading" secondItem="PpE-te-SRM" secondAttribute="leading" id="ZUD-Qn-aGj"/>
+                                                    <constraint firstAttribute="trailing" secondItem="6L6-bK-dI0" secondAttribute="trailing" constant="12" id="fEW-jJ-uEq"/>
                                                     <constraint firstItem="PpE-te-SRM" firstAttribute="leading" secondItem="3TX-VZ-k9r" secondAttribute="leading" constant="12" id="gWI-eQ-kJd"/>
                                                     <constraint firstItem="6L6-bK-dI0" firstAttribute="top" secondItem="yMj-O2-t1D" secondAttribute="bottom" constant="10" id="zg4-cZ-2E3"/>
                                                 </constraints>
@@ -219,6 +220,11 @@
             <point key="canvasLocation" x="-126.08695652173914" y="64.955357142857139"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="6L6-bK-dI0">
+            <size key="intrinsicContentSize" width="390" height="24"/>
+        </designable>
+    </designables>
     <resources>
         <image name="plus" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">
