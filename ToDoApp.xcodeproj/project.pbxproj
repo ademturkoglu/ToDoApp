@@ -31,7 +31,7 @@
 		93A2C4612661026D009868E0 /* TaskCreateViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A2C4602661026D009868E0 /* TaskCreateViewState.swift */; };
 		93A2C47526613429009868E0 /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A2C47326613429009868E0 /* DateViewController.swift */; };
 		93A2C47626613429009868E0 /* DateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93A2C47426613429009868E0 /* DateViewController.xib */; };
-		93A2C48326615816009868E0 /* DateExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A2C48226615816009868E0 /* DateExt.swift */; };
+		93A2C48326615816009868E0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A2C48226615816009868E0 /* Extensions.swift */; };
 		A611A40CF2F6D0E30FFBE487 /* Pods_ToDoApp_ToDoAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E053C50F49EDF7D4A6284EF1 /* Pods_ToDoApp_ToDoAppUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -86,7 +86,7 @@
 		93A2C4602661026D009868E0 /* TaskCreateViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCreateViewState.swift; sourceTree = "<group>"; };
 		93A2C47326613429009868E0 /* DateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
 		93A2C47426613429009868E0 /* DateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DateViewController.xib; sourceTree = "<group>"; };
-		93A2C48226615816009868E0 /* DateExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExt.swift; sourceTree = "<group>"; };
+		93A2C48226615816009868E0 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		98D384956D71057D3C2A5AEF /* Pods-ToDoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoApp.debug.xcconfig"; path = "Target Support Files/Pods-ToDoApp/Pods-ToDoApp.debug.xcconfig"; sourceTree = "<group>"; };
 		BB88BFB69E9D3EF5B3D503D5 /* Pods-ToDoApp-ToDoAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoApp-ToDoAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-ToDoApp-ToDoAppUITests/Pods-ToDoApp-ToDoAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E053C50F49EDF7D4A6284EF1 /* Pods_ToDoApp_ToDoAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToDoApp_ToDoAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -187,7 +187,7 @@
 				93447054265D192A0069902A /* AppDelegate.swift */,
 				934470DE265D249D0069902A /* FloatingActionButton.swift */,
 				93A2C42E265E591C009868E0 /* UserDefaultsHelper.swift */,
-				93A2C48226615816009868E0 /* DateExt.swift */,
+				93A2C48226615816009868E0 /* Extensions.swift */,
 				93447062265D192B0069902A /* Info.plist */,
 			);
 			path = ToDoApp;
@@ -520,7 +520,7 @@
 			files = (
 				93447059265D192A0069902A /* TasksViewController.swift in Sources */,
 				93447108265DA2280069902A /* TasksViewModel.swift in Sources */,
-				93A2C48326615816009868E0 /* DateExt.swift in Sources */,
+				93A2C48326615816009868E0 /* Extensions.swift in Sources */,
 				93A2C47526613429009868E0 /* DateViewController.swift in Sources */,
 				93447055265D192A0069902A /* AppDelegate.swift in Sources */,
 				93A2C45C2661020D009868E0 /* TaskCreateViewModel.swift in Sources */,

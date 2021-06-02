@@ -26,6 +26,7 @@ class TaskCreateViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         model = viewModel.getTask()
+        self.hideKeyboardWhenTappedAround()
         tagListView.delegate = self
         dateTextField.delegate = self
         setupViewModel()
@@ -111,9 +112,9 @@ extension TaskCreateViewController: UITextFieldDelegate {
          let sheetController = SheetViewController(controller: dateVC, sizes: [.fixed(280)], options: .default)
         self.dismissSheet = {
             sheetController.dismiss(animated: true, completion: nil)
+            textField.endEditing(true)
         }
          self.present(sheetController, animated: true, completion: nil)
-        textField.endEditing(true)
     
     }
 }
